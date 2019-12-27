@@ -27,7 +27,7 @@ abstract class ValidationContainer(private val context: Context) {
   abstract fun <T : View> findViewById(@IdRes id: Int): T?
 
   /** Retrieves the value of a string resource. */
-  internal fun getString(@StringRes res: Int?): String? {
+  fun getString(@StringRes res: Int?): String? {
     return if (res == null) {
       null
     } else {
